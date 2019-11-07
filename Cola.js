@@ -39,10 +39,10 @@ export default class Cola{
                     this._eliminarProceso(temporal);
                     this._cantProcesos--;
                     this._procesoAtendido++;
-                    temporal = temporal.siguiente;
+                    
                 }
                 temporal.ciclos--;
-                
+                temporal = temporal.siguiente;
             }else{
                 //Contador de cola vacia
                 this._colaVacia++;
